@@ -43,13 +43,13 @@ Widget SignUpContainer({required String st}) {
 }
 
 // rich text
-TextSpan RichTextSpan() {
-  return const TextSpan(children: [
+TextSpan RichTextSpan({required String one, required String two}) {
+  return TextSpan(children: [
     TextSpan(
-        text: "Don’t have an account ? ",
+        text: one,
         style: TextStyle(fontSize: 13, color: AppColors.kBlackColor)),
     TextSpan(
-        text: "Login",
+        text: two,
         style: TextStyle(
           fontSize: 13,
           color: AppColors.kBlueColor,

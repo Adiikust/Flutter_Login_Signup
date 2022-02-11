@@ -1,13 +1,13 @@
 import 'package:login_signup/utils/exports.dart';
 
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({Key? key}) : super(key: key);
 
   @override
-  _HomeScreenState createState() => _HomeScreenState();
+  _LoginScreenState createState() => _LoginScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -23,7 +23,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     customText(
-                        txt: "Welcome",
+                        txt: "Login Now",
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 26,
@@ -32,18 +32,13 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: 8,
                     ),
                     customText(
-                        txt:
-                            "Please login or sign up to continue using our app.",
+                        txt: "Please login to continue using our app.",
                         style: const TextStyle(
                           fontWeight: FontWeight.normal,
                           fontSize: 14,
                         )),
                     const SizedBox(
-                      height: 30,
-                    ),
-                    Image.asset("image/img1.png"),
-                    const SizedBox(
-                      height: 50,
+                      height: 60,
                     ),
                     customText(
                         txt: "Enter via social networks",
@@ -79,8 +74,17 @@ class _HomeScreenState extends State<HomeScreen> {
                           fontSize: 14,
                         )),
                     const SizedBox(
-                      height: 50,
+                      height: 30,
                     ),
+                    const TextField(
+                      decoration: InputDecoration(
+                          hintText: "Email",
+                          focusedBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: AppColors.kwhiteColor, width: 2))),
+                      keyboardType: TextInputType.multiline,
+                    ),
+
                     InkWell(
                       child: SignUpContainer(st: "Sign Up"),
                       onTap: () {},
@@ -91,7 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     InkWell(
                       child: RichText(
                         text: RichTextSpan(
-                            one: "Don’t have an account ? ", two: "LogIn"),
+                            one: "Don’t have an account ? ", two: "Sign Up"),
                       ),
                       onTap: () {},
                     ),
