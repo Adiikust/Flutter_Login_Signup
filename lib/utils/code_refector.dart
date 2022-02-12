@@ -56,3 +56,24 @@ TextSpan RichTextSpan({required String one, required String two}) {
         )),
   ]);
 }
+
+// TextField
+Widget CustomTextField({required String Lone, required String Htwo}) {
+  return TextField(
+    decoration: InputDecoration(
+        labelText: Lone,
+        hintText: Htwo,
+        hintStyle: const TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 17,
+        ),
+        border: const OutlineInputBorder(
+            borderSide: BorderSide(
+          width: 5,
+          color: AppColors.kDarkblack,
+          style: BorderStyle.solid,
+        ))),
+    autofocus: true,
+    keyboardType: TextInputType.multiline,
+  );
+}

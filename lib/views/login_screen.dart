@@ -76,15 +76,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(
                       height: 30,
                     ),
-                    const TextField(
-                      decoration: InputDecoration(
-                          hintText: "Email",
-                          focusedBorder: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                  color: AppColors.kwhiteColor, width: 2))),
-                      keyboardType: TextInputType.multiline,
-                    ),
-
+                    const SizedBox(height: 20),
+                    CustomTextField(Lone: "Email", Htwo: "Email"),
+                    const SizedBox(height: 20),
+                    CustomTextField(Lone: "Password", Htwo: "Password"),
+                    const SizedBox(height: 20),
                     InkWell(
                       child: SignUpContainer(st: "Sign Up"),
                       onTap: () {},
