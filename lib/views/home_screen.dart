@@ -83,7 +83,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                     InkWell(
                       child: SignUpContainer(st: "Sign Up"),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const SignupScreen()));
+                      },
                     ),
                     const SizedBox(
                       height: 50,
@@ -93,7 +96,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         text: RichTextSpan(
                             one: "Don’t have an account ? ", two: "LogIn"),
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const LoginScreen()));
+                      },
                     ),
                     //Text("data"),
                   ],

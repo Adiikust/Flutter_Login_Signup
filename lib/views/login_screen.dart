@@ -113,7 +113,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(height: 40),
                     InkWell(
                       child: SignUpContainer(st: "LogIn"),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const WelcomeScreen()));
+                      },
                     ),
                     const SizedBox(
                       height: 50,
@@ -123,7 +126,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         text: RichTextSpan(
                             one: "Don’t have an account ? ", two: "Sign Up"),
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const SignupScreen()));
+                      },
                     ),
                     //Text("data"),
                   ],

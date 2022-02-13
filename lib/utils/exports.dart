@@ -4,6 +4,7 @@ export 'package:flutter/material.dart';
 export 'package:login_signup/views/home_screen.dart';
 export 'package:login_signup/views/login_screen.dart';
 export 'package:login_signup/views/signup_sreen.dart';
+export 'package:login_signup/views/welcome_Screen.dart';
 
 //Controllers
 

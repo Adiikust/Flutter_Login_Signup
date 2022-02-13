@@ -113,7 +113,10 @@ class _SignupScreenState extends State<SignupScreen> {
                         text: RichTextSpan(
                             one: "Already have an account ? ", two: "Login"),
                       ),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => const LoginScreen()));
+                      },
                     ),
                     //Text("data"),
                   ],
