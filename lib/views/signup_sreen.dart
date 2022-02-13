@@ -1,13 +1,13 @@
 import 'package:login_signup/utils/exports.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class SignupScreen extends StatefulWidget {
+  const SignupScreen({Key? key}) : super(key: key);
 
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _SignupScreenState createState() => _SignupScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _SignupScreenState extends State<SignupScreen> {
   bool _value = false;
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     customText(
-                        txt: "Login Now",
+                        txt: "Sign Up",
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 26,
@@ -33,7 +33,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       height: 8,
                     ),
                     customText(
-                        txt: "Please login to continue using our app.",
+                        txt: "Please sign up to enter in a app.",
                         style: const TextStyle(
                           fontWeight: FontWeight.normal,
                           fontSize: 14,
@@ -97,22 +97,12 @@ class _LoginScreenState extends State<LoginScreen> {
                             );
                           },
                         ),
-                        Spacer(),
-                        const TextButton(
-                          onPressed: null,
-                          child: Text(
-                            "Forgot password?",
-                            style: TextStyle(
-                              fontSize: 15,
-                            ),
-                          ),
-                        ),
                       ],
                     ),
 
                     const SizedBox(height: 40),
                     InkWell(
-                      child: SignUpContainer(st: "LogIn"),
+                      child: SignUpContainer(st: "Sign Up"),
                       onTap: () {},
                     ),
                     const SizedBox(
@@ -121,7 +111,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     InkWell(
                       child: RichText(
                         text: RichTextSpan(
-                            one: "Don’t have an account ? ", two: "Sign Up"),
+                            one: "Already have an account ? ", two: "Login"),
                       ),
                       onTap: () {},
                     ),
