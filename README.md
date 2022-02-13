@@ -1,7 +1,8 @@
 
 # Flutter_Login_Signup
 
-<img src="home.PNG" alt="Italian Trulli">
+<img src="https://user-images.githubusercontent.com/99065355/153745304-134df977-0519-40cc-b457-8bfa78857e0e.PNG" alt="Italian Trulli">
+![home](https://user-images.githubusercontent.com/99065355/153745304-134df977-0519-40cc-b457-8bfa78857e0e.PNG)
 
 ## Authors
 
